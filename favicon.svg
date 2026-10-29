@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="chromaGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </radialGradient>
+    <linearGradient id="orbBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="33%" stop-color="#eab308" />
+      <stop offset="66%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#090d16" stroke="url(#orbBorder)" stroke-width="3.5" />
+  <circle cx="26" cy="26" r="14" fill="#f43f5e" opacity="0.8" style="mix-blend-mode: screen;" />
+  <circle cx="38" cy="26" r="14" fill="#10b981" opacity="0.8" style="mix-blend-mode: screen;" />
+  <circle cx="32" cy="38" r="14" fill="#3b82f6" opacity="0.8" style="mix-blend-mode: screen;" />
+  <circle cx="32" cy="30" r="6" fill="#ffffff" opacity="0.9" filter="drop-shadow(0 0 6px rgba(255,255,255,0.8))" />
+</svg>

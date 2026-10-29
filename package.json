@@ -1,0 +1,23 @@
+{
+  "name": "chroma-lab-color-mixer",
+  "version": "1.0.0",
+  "description": "The Chroma Lab: Interactive Color Mixing, Pigment Chemistry & Optical Synthesis Explorer",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "color-mixer",
+    "color-mixing",
+    "subtractive-mixing",
+    "additive-mixing",
+    "oklch",
+    "cmyk",
+    "rgb",
+    "color-harmonies",
+    "gamility",
+    "explorer"
+  ],
+  "author": "Gamility",
+  "license": "MIT"
+}

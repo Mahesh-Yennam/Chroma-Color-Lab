@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFQ8M0VSFN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RFQ8M0VSFN');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Chroma Lab: Color Mixing & Spectral Synthesis Explorer | Gamility</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Interactive chromatic laboratory, physical pigment alchemy, and optical color mixing explorer. Blend 1-4 colors with customizable percentage ratios, explore subtractive vs additive physics, copy color codes, and play Chroma Match.">
+  <meta name="keywords" content="color mixer, color mixing app, pigment mixing, subtractive mixing, additive light, oklch, cmyk, hex color codes, color harmonies, gamility explorer">
+  <meta name="author" content="Gamility">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mahesh-yennam.github.io/Chroma-Color-Lab/">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mahesh-yennam.github.io/Chroma-Color-Lab/">
+  <meta property="og:title" content="The Chroma Lab: Color Mixing & Spectral Synthesis Explorer | Gamility">
+  <meta property="og:description" content="Interactive chromatic laboratory, physical pigment alchemy, and optical color mixing explorer. Blend 1-4 colors with customizable percentage ratios, explore subtractive vs additive physics, copy color codes, and play Chroma Match.">
+  <meta property="og:image" content="https://mahesh-yennam.github.io/Chroma-Color-Lab/preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="The Chroma Lab: Color Mixing & Spectral Synthesis Explorer | Gamility">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mahesh-yennam.github.io/Chroma-Color-Lab/">
+  <meta name="twitter:title" content="The Chroma Lab: Color Mixing & Spectral Synthesis Explorer | Gamility">
+  <meta name="twitter:description" content="Interactive chromatic laboratory, physical pigment alchemy, and optical color mixing explorer. Blend 1-4 colors with customizable percentage ratios, explore subtractive vs additive physics, copy color codes, and play Chroma Match.">
+  <meta name="twitter:image" content="https://mahesh-yennam.github.io/Chroma-Color-Lab/preview.png">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#090d16">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "The Chroma Lab: Color Mixing & Spectral Synthesis",
+    "url": "https://mahesh-yennam.github.io/Chroma-Color-Lab/",
+    "description": "Interactive chromatic laboratory, physical pigment alchemy, and optical color mixing explorer.",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. PORTAL RETURN RIBBON & APP HEADER
+       ========================================================================= -->
+  <aside class="portal-ribbon" aria-label="Portal Navigation">
+    <div class="ribbon-inner">
+      <a href="https://mahesh-yennam.github.io/Gamility/" class="ribbon-brand">
+        <span class="ribbon-brand-icon">🎮</span>
+        <span>Gamility<strong>Portal</strong></span>
+      </a>
+      <div class="ribbon-crumbs">
+        <a href="https://mahesh-yennam.github.io/Gamility/explorer.html" class="ribbon-crumb-link">Explorer Hub</a>
+        <span class="crumb-separator">/</span>
+        <span class="crumb-current">The Chroma Lab</span>
+      </div>
+      <div class="ribbon-actions">
+        <button type="button" class="audio-toggle-btn" id="audioToggleBtn" aria-label="Toggle procedural audio sound effects">
+          <span class="audio-icon" id="audioIcon">🔊</span>
+          <span class="audio-label" id="audioLabel">Sound: ON</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <header class="app-hero-header">
+    <div class="container hero-content">
+      <div class="hero-brand-line">
+        <div class="hero-badge-pill">
+          <span class="badge-dot pulse-animation"></span>
+          <span>Chromatic Physics &amp; Pigment Synthesis Engine</span>
+        </div>
+        <span class="tech-tag">100% Client-Side Privacy</span>
+      </div>
+      <h1 class="hero-title">The Chroma Lab: Color Mixing &amp; Spectral Synthesis</h1>
+      <p class="hero-subtitle">
+        Explore the science and art of chromatic blending. Blend 1 to 4 colors with dynamic volume ratios inside the central live Chroma Orb, explore realistic subtractive paint vs. additive light physics, copy precision color codes, and master color theory with interactive challenges.
+      </p>
+
+      <!-- Key Metrics Counter Bar -->
+      <div class="hero-stats-bar">
+        <div class="hstat-item">
+          <span class="hstat-num">4</span>
+          <span class="hstat-label">Mixing Buckets</span>
+        </div>
+        <div class="hstat-divider"></div>
+        <div class="hstat-item">
+          <span class="hstat-num">3</span>
+          <span class="hstat-label">Physics Engines</span>
+        </div>
+        <div class="hstat-divider"></div>
+        <div class="hstat-item">
+          <span class="hstat-num">1,200+</span>
+          <span class="hstat-label">Named Pigments</span>
+        </div>
+        <div class="hstat-divider"></div>
+        <div class="hstat-item">
+          <span class="hstat-num">7</span>
+          <span class="hstat-label">Export Formats</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. PRIMARY APPLICATION NAVIGATION TABS
+       ========================================================================= -->
+  <nav class="app-nav-bar" aria-label="Application Sections">
+    <div class="container">
+      <div class="nav-tabs-wrapper" role="tablist">
+        <button type="button" class="nav-tab-btn active" data-tab="viewLab" role="tab" aria-selected="true">
+          <span class="tab-icon">🧪</span>
+          <span>Live Mixer Lab</span>
+        </button>
+        <button type="button" class="nav-tab-btn" data-tab="viewPhysics" role="tab" aria-selected="false">
+          <span class="tab-icon">🔬</span>
+          <span>Pigment vs. Light</span>
+        </button>
+        <button type="button" class="nav-tab-btn" data-tab="viewHarmonies" role="tab" aria-selected="false">
+          <span class="tab-icon">🌈</span>
+          <span>Harmonies &amp; Palettes</span>
+        </button>
+        <button type="button" class="nav-tab-btn" data-tab="viewRecipes" role="tab" aria-selected="false">
+          <span class="tab-icon">📜</span>
+          <span>Historical Recipes</span>
+        </button>
+        <button type="button" class="nav-tab-btn" data-tab="viewQuiz" role="tab" aria-selected="false">
+          <span class="tab-icon">🎯</span>
+          <span>Chroma Match Challenge</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       3. MAIN CONTENT VIEWS
+       ========================================================================= -->
+  <main class="app-main-content">
+    <div class="container">
+
+      <!-- =====================================================================
+           VIEW 1: LIVE MIXER LAB (CORE EXPERIENCE)
+           ===================================================================== -->
+      <section id="viewLab" class="tab-view-section active" role="tabpanel">
+
+        <!-- Controls Toolbar -->
+        <div class="mixer-toolbar">
+          <div class="toolbar-group">
+            <span class="toolbar-label">Mixing Physics:</span>
+            <div class="toggle-segmented-control" role="radiogroup">
+              <button type="button" class="seg-btn active" data-engine="subtractive" role="radio" aria-checked="true" title="Physical paint & pigment absorption (Yellow + Blue = Green)">
+                🎨 Subtractive (Paint)
+              </button>
+              <button type="button" class="seg-btn" data-engine="additive" role="radio" aria-checked="false" title="Optical stage light & screen RGB (Red + Green = Yellow)">
+                💡 Additive (Light)
+              </button>
+              <button type="button" class="seg-btn" data-engine="oklch" role="radio" aria-checked="false" title="Modern perceptual uniform color space blending">
+                ✨ Perceptual (OKLCH)
+              </button>
+            </div>
+          </div>
+
+          <div class="toolbar-group">
+            <div class="toolbar-action-buttons">
+              <button type="button" class="btn btn-outline btn-sm" id="btnRandomizeMix" title="Generate random harmonious colors">
+                🎲 Randomize
+              </button>
+              <button type="button" class="btn btn-outline btn-sm" id="btnResetMix" title="Reset to standard primary triad">
+                ↺ Reset
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- STAGE: CENTRAL CIRCULAR CHROMA ORB VIEWPORT -->
+        <div class="chroma-orb-stage">
+          <div class="orb-visual-wrapper">
+            <div class="orb-outer-ring" id="orbOuterRing">
+              <div class="chroma-orb-core" id="chromaOrb" aria-label="Live Mixed Color Result">
+                <div class="orb-specular-highlight"></div>
+                <div class="orb-fluid-swirl" id="orbFluidSwirl"></div>
+                <div class="orb-center-telemetry">
+                  <div class="orb-name-badge" id="orbColorNameBadge">Royal Amethyst</div>
+                  <div class="orb-hex-badge" id="orbColorHexBadge">#8B5CF6</div>
+                  <span class="orb-copy-hint" id="orbCopyHint">Click orb to copy HEX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Color Match & Quick Action Pills -->
+          <div class="orb-meta-ribbon">
+            <div class="meta-tag" id="metaColorCategory">Category: Violet / Purple</div>
+            <div class="meta-tag" id="metaLuminance">Luminance: 38%</div>
+            <div class="meta-tag" id="metaWcagPass">WCAG AA: Best on White</div>
+          </div>
+        </div>
+
+        <!-- 4 CIRCULAR COLOR STATIONS DOCK (SIDE BY SIDE) -->
+        <div class="color-dock-section">
+          <div class="dock-header">
+            <h2 class="dock-title">🎨 4 Circular Color Stations</h2>
+            <p class="dock-desc">Adjust 1 to 4 colors and their exact volume percentage. Tap any circle to change its color.</p>
+          </div>
+
+          <div class="bucket-grid" id="bucketGrid">
+            <!-- Station 1 -->
+            <article class="bucket-card" id="bucketCard0" data-bucket-idx="0">
+              <div class="bucket-card-top">
+                <span class="bucket-badge">Color 1</span>
+                <label class="bucket-power-toggle" title="Enable / Disable Color 1">
+                  <input type="checkbox" class="bucket-enable-check" checked data-bucket-idx="0">
+                  <span class="power-toggle-dot"></span>
+                </label>
+              </div>
+
+              <!-- Circular Color Swatch -->
+              <div class="bucket-circle-wrapper">
+                <div class="bucket-color-circle" id="bucketFluid0" style="background-color: #ef4444;">
+                  <span class="circle-pct-overlay" id="bucketPctLabel0">40%</span>
+                  <input type="color" class="bucket-color-picker" id="bucketPicker0" value="#ef4444" aria-label="Color 1 Picker">
+                </div>
+              </div>
+
+              <!-- Direct Hex Code -->
+              <div class="bucket-hex-row">
+                <input type="text" class="bucket-hex-input" id="bucketHex0" value="#EF4444" maxlength="7" spellcheck="false" aria-label="Color 1 Hex">
+              </div>
+
+              <!-- Percentage Slider -->
+              <div class="bucket-slider-row">
+                <input type="range" class="bucket-range-slider" id="bucketSlider0" min="0" max="100" value="40" data-bucket-idx="0" aria-label="Color 1 Percentage">
+              </div>
+            </article>
+
+            <!-- Station 2 -->
+            <article class="bucket-card" id="bucketCard1" data-bucket-idx="1">
+              <div class="bucket-card-top">
+                <span class="bucket-badge">Color 2</span>
+                <label class="bucket-power-toggle" title="Enable / Disable Color 2">
+                  <input type="checkbox" class="bucket-enable-check" checked data-bucket-idx="1">
+                  <span class="power-toggle-dot"></span>
+                </label>
+              </div>
+
+              <div class="bucket-circle-wrapper">
+                <div class="bucket-color-circle" id="bucketFluid1" style="background-color: #3b82f6;">
+                  <span class="circle-pct-overlay" id="bucketPctLabel1">35%</span>
+                  <input type="color" class="bucket-color-picker" id="bucketPicker1" value="#3b82f6" aria-label="Color 2 Picker">
+                </div>
+              </div>
+
+              <div class="bucket-hex-row">
+                <input type="text" class="bucket-hex-input" id="bucketHex1" value="#3B82F6" maxlength="7" spellcheck="false" aria-label="Color 2 Hex">
+              </div>
+
+              <div class="bucket-slider-row">
+                <input type="range" class="bucket-range-slider" id="bucketSlider1" min="0" max="100" value="35" data-bucket-idx="1" aria-label="Color 2 Percentage">
+              </div>
+            </article>
+
+            <!-- Station 3 -->
+            <article class="bucket-card" id="bucketCard2" data-bucket-idx="2">
+              <div class="bucket-card-top">
+                <span class="bucket-badge">Color 3</span>
+                <label class="bucket-power-toggle" title="Enable / Disable Color 3">
+                  <input type="checkbox" class="bucket-enable-check" checked data-bucket-idx="2">
+                  <span class="power-toggle-dot"></span>
+                </label>
+              </div>
+
+              <div class="bucket-circle-wrapper">
+                <div class="bucket-color-circle" id="bucketFluid2" style="background-color: #f59e0b;">
+                  <span class="circle-pct-overlay" id="bucketPctLabel2">25%</span>
+                  <input type="color" class="bucket-color-picker" id="bucketPicker2" value="#f59e0b" aria-label="Color 3 Picker">
+                </div>
+              </div>
+
+              <div class="bucket-hex-row">
+                <input type="text" class="bucket-hex-input" id="bucketHex2" value="#F59E0B" maxlength="7" spellcheck="false" aria-label="Color 3 Hex">
+              </div>
+
+              <div class="bucket-slider-row">
+                <input type="range" class="bucket-range-slider" id="bucketSlider2" min="0" max="100" value="25" data-bucket-idx="2" aria-label="Color 3 Percentage">
+              </div>
+            </article>
+
+            <!-- Station 4 (Initially Off) -->
+            <article class="bucket-card bucket-disabled" id="bucketCard3" data-bucket-idx="3">
+              <div class="bucket-card-top">
+                <span class="bucket-badge">Color 4</span>
+                <label class="bucket-power-toggle" title="Enable / Disable Color 4">
+                  <input type="checkbox" class="bucket-enable-check" data-bucket-idx="3">
+                  <span class="power-toggle-dot"></span>
+                </label>
+              </div>
+
+              <div class="bucket-circle-wrapper">
+                <div class="bucket-color-circle" id="bucketFluid3" style="background-color: #ffffff;">
+                  <span class="circle-pct-overlay" id="bucketPctLabel3">0%</span>
+                  <input type="color" class="bucket-color-picker" id="bucketPicker3" value="#ffffff" aria-label="Color 4 Picker">
+                </div>
+              </div>
+
+              <div class="bucket-hex-row">
+                <input type="text" class="bucket-hex-input" id="bucketHex3" value="#FFFFFF" maxlength="7" spellcheck="false" aria-label="Color 4 Hex">
+              </div>
+
+              <div class="bucket-slider-row">
+                <input type="range" class="bucket-range-slider" id="bucketSlider3" min="0" max="100" value="0" data-bucket-idx="3" aria-label="Color 4 Percentage">
+              </div>
+            </article>
+          </div>
+
+        <!-- MULTI-FORMAT CODE EXPORT & ACCESSIBILITY INSPECTOR -->
+        <div class="code-export-section">
+          <div class="section-title-bar">
+            <div>
+              <h3 class="section-heading">📋 Precision Color Codes &amp; Export Formats</h3>
+              <p class="section-subtext">Click any format card to copy the code to your clipboard.</p>
+            </div>
+            <div class="copy-toast-banner" id="copyToastBanner">✓ Copied to clipboard!</div>
+          </div>
+
+          <div class="code-cards-grid">
+            <!-- HEX -->
+            <div class="code-card" data-copy-target="codeHex">
+              <div class="code-card-header">
+                <span class="code-format-name">HEX</span>
+                <span class="copy-badge">Copy ⎘</span>
+              </div>
+              <code class="code-value" id="codeHex">#8B5CF6</code>
+            </div>
+
+            <!-- RGB -->
+            <div class="code-card" data-copy-target="codeRgb">
+              <div class="code-card-header">
+                <span class="code-format-name">RGB (Screen Standard)</span>
+                <span class="copy-badge">Copy ⎘</span>
+              </div>
+              <code class="code-value" id="codeRgb">rgb(139, 92, 246)</code>
+            </div>
+
+            <!-- HSL -->
+            <div class="code-card" data-copy-target="codeHsl">
+              <div class="code-card-header">
+                <span class="code-format-name">HSL (Hue, Sat, Light)</span>
+                <span class="copy-badge">Copy ⎘</span>
+              </div>
+              <code class="code-value" id="codeHsl">hsl(258, 90%, 66%)</code>
+            </div>
+
+            <!-- OKLCH -->
+            <div class="code-card" data-copy-target="codeOklch">
+              <div class="code-card-header">
+                <span class="code-format-name">OKLCH (Perceptual CSS)</span>
+                <span class="copy-badge">Copy ⎘</span>
+              </div>
+              <code class="code-value" id="codeOklch">oklch(0.58 0.23 293)</code>
+            </div>
+
+            <!-- CMYK -->
+            <div class="code-card" data-copy-target="codeCmyk">
+              <div class="code-card-header">
+                <span class="code-format-name">CMYK (Print Pigment)</span>
+                <span class="copy-badge">Copy ⎘</span>
+              </div>
+              <code class="code-value" id="codeCmyk">cmyk(43%, 63%, 0%, 4%)</code>
+            </div>
+
+            <!-- CSS color-mix() -->
+            <div class="code-card" data-copy-target="codeColorMix">
+              <div class="code-card-header">
+                <span class="code-format-name">CSS Native color-mix()</span>
+                <span class="copy-badge">Copy ⎘</span>
+              </div>
+              <code class="code-value" id="codeColorMix">color-mix(in srgb, #ef4444 40%, #3b82f6 35%, #f59e0b 25%)</code>
+            </div>
+          </div>
+
+          <!-- WCAG 2.1 Contrast Telemetry Box -->
+          <div class="wcag-contrast-box">
+            <h4 class="wcag-title">♿ WCAG 2.1 Legibility &amp; Contrast Telemetry</h4>
+            <div class="wcag-split-grid">
+              <div class="wcag-sample-card" id="wcagDarkCard" style="background:#090d16; color:#8B5CF6;">
+                <div class="wcag-sample-text">Sample Text on Dark (#090d16)</div>
+                <div class="wcag-metrics">
+                  <span>Contrast: <strong id="wcagDarkRatio">4.8:1</strong></span>
+                  <span class="wcag-badge pass" id="wcagDarkBadge">AA Normal Pass</span>
+                </div>
+              </div>
+              <div class="wcag-sample-card" id="wcagLightCard" style="background:#ffffff; color:#8B5CF6;">
+                <div class="wcag-sample-text">Sample Text on Light (#FFFFFF)</div>
+                <div class="wcag-metrics">
+                  <span>Contrast: <strong id="wcagLightRatio">4.2:1</strong></span>
+                  <span class="wcag-badge pass" id="wcagLightBadge">AA Large Pass</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- =====================================================================
+           VIEW 2: PIGMENT VS. LIGHT PHYSICS COMPARATOR
+           ===================================================================== -->
+      <section id="viewPhysics" class="tab-view-section" role="tabpanel">
+        <div class="section-intro-card">
+          <h2 class="section-title">🔬 Subtractive vs. Additive Chromatic Physics</h2>
+          <p class="section-desc">
+            Why does mixing Yellow and Blue paint produce vivid Green, but mixing Yellow and Blue light beams produces White? Explore the fundamental difference between light wavelength absorption and light emission.
+          </p>
+        </div>
+
+        <div class="physics-comparator-grid">
+          <!-- Subtractive Card -->
+          <div class="physics-card">
+            <div class="pcard-header" style="border-top-color: #f59e0b;">
+              <span class="pcard-badge">🎨 Physical Art &amp; Print</span>
+              <h3 class="pcard-title">Subtractive Mixing (Pigment Chemistry)</h3>
+            </div>
+            <p class="pcard-text">
+              Pigments work by <strong>absorbing (subtracting)</strong> specific light wavelengths from ambient white light, reflecting only the unabsorbed remainder to your eyes.
+            </p>
+            <div class="physics-diagram-box subtractive-canvas-box">
+              <svg viewBox="0 0 240 210" class="venn-svg" aria-label="Subtractive Pigment Mixing Venn Diagram">
+                <defs>
+                  <circle id="sub-c1" cx="120" cy="78" r="48" />
+                  <circle id="sub-c2" cx="90" cy="130" r="48" />
+                  <circle id="sub-c3" cx="150" cy="130" r="48" />
+                  <clipPath id="sub-clip2"><use href="#sub-c2"/></clipPath>
+                  <clipPath id="sub-clip3"><use href="#sub-c3"/></clipPath>
+                </defs>
+                <rect width="240" height="210" rx="12" fill="#ffffff" />
+                <!-- Base Circles -->
+                <use href="#sub-c1" fill="#00D2FF" />
+                <use href="#sub-c2" fill="#FF0080" />
+                <use href="#sub-c3" fill="#FFE500" />
+                <!-- 2-Way Intersections -->
+                <use href="#sub-c1" clip-path="url(#sub-clip2)" fill="#1D4ED8" />
+                <use href="#sub-c1" clip-path="url(#sub-clip3)" fill="#16A34A" />
+                <use href="#sub-c2" clip-path="url(#sub-clip3)" fill="#DC2626" />
+                <!-- 3-Way Center Intersection -->
+                <g clip-path="url(#sub-clip3)">
+                  <use href="#sub-c1" clip-path="url(#sub-clip2)" fill="#111827" />
+                </g>
+                <!-- Labels -->
+                <text x="120" y="52" text-anchor="middle" fill="#030712" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800">Cyan</text>
+                <text x="64" y="146" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800">Magenta</text>
+                <text x="176" y="146" text-anchor="middle" fill="#030712" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800">Yellow</text>
+                <text x="96" y="98" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800">Blue</text>
+                <text x="144" y="98" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800">Green</text>
+                <text x="120" y="142" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800">Red</text>
+                <text x="120" y="116" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="900">Black</text>
+              </svg>
+            </div>
+            <ul class="physics-rules-list">
+              <li><strong>Primary Pigments:</strong> Cyan, Magenta, Yellow (or Red, Yellow, Blue in classical art)</li>
+              <li><strong>Key Formula:</strong> More colors mixed = Less reflected light = Darker result</li>
+              <li><strong>Ultimate Blend:</strong> Mixing all pigments absorbs all light → <strong>Black</strong></li>
+            </ul>
+          </div>
+
+          <!-- Additive Card -->
+          <div class="physics-card">
+            <div class="pcard-header" style="border-top-color: #38bdf8;">
+              <span class="pcard-badge">💡 Photonics &amp; Screens</span>
+              <h3 class="pcard-title">Additive Mixing (Optical Light Synthesis)</h3>
+            </div>
+            <p class="pcard-text">
+              Optical light synthesis occurs when emitted photons of different wavelengths combine in the eye's photoreceptor cone cells (L, M, S cones).
+            </p>
+            <div class="physics-diagram-box additive-stage-box">
+              <svg viewBox="0 0 240 210" class="venn-svg" aria-label="Additive Optical Light Mixing Venn Diagram">
+                <defs>
+                  <circle id="add-c1" cx="120" cy="78" r="48" />
+                  <circle id="add-c2" cx="90" cy="130" r="48" />
+                  <circle id="add-c3" cx="150" cy="130" r="48" />
+                  <clipPath id="add-clip2"><use href="#add-c2"/></clipPath>
+                  <clipPath id="add-clip3"><use href="#add-c3"/></clipPath>
+                </defs>
+                <rect width="240" height="210" rx="12" fill="#090d16" />
+                <!-- Base Circles -->
+                <use href="#add-c1" fill="#FF264A" />
+                <use href="#add-c2" fill="#00E65B" />
+                <use href="#add-c3" fill="#246BFF" />
+                <!-- 2-Way Intersections -->
+                <use href="#add-c1" clip-path="url(#add-clip2)" fill="#FFDF00" />
+                <use href="#add-c1" clip-path="url(#add-clip3)" fill="#FF2EA6" />
+                <use href="#add-c2" clip-path="url(#add-clip3)" fill="#00E5FF" />
+                <!-- 3-Way Center Intersection -->
+                <g clip-path="url(#add-clip3)">
+                  <use href="#add-c1" clip-path="url(#add-clip2)" fill="#FFFFFF" />
+                </g>
+                <!-- Labels -->
+                <text x="120" y="52" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800">Red</text>
+                <text x="64" y="146" text-anchor="middle" fill="#030712" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800">Green</text>
+                <text x="176" y="146" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800">Blue</text>
+                <text x="96" y="98" text-anchor="middle" fill="#030712" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800">Yellow</text>
+                <text x="144" y="98" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800">Magenta</text>
+                <text x="120" y="142" text-anchor="middle" fill="#030712" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800">Cyan</text>
+                <text x="120" y="116" text-anchor="middle" fill="#030712" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="900">White</text>
+              </svg>
+            </div>
+            <ul class="physics-rules-list">
+              <li><strong>Primary Emitters:</strong> Red (700nm), Green (546nm), Blue (435nm)</li>
+              <li><strong>Key Formula:</strong> More light beams added = More photon energy = Brighter result</li>
+              <li><strong>Ultimate Blend:</strong> Mixing all visible wavelengths triggers all cones → <strong>Pure White</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Comparative Interactive Blend Table -->
+        <div class="interactive-blend-comparison-box">
+          <h3 class="box-heading">⚡ The Classic Mixing Paradox</h3>
+          <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Color Combination</th>
+                  <th>Subtractive (Paint Pigment)</th>
+                  <th>Additive (Stage Light)</th>
+                  <th>Why They Differ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Blue + Yellow</strong></td>
+                  <td><span class="color-sample-pill" style="background:#22c55e;">Green</span></td>
+                  <td><span class="color-sample-pill" style="background:#ffffff; color:#000;">White / Gray</span></td>
+                  <td>Yellow reflects red+green; blue reflects blue+green. Overlap = green reflected in paint. In light, red+green+blue triggers all cones to see white.</td>
+                </tr>
+                <tr>
+                  <td><strong>Red + Green</strong></td>
+                  <td><span class="color-sample-pill" style="background:#78350f;">Muddy Olive Brown</span></td>
+                  <td><span class="color-sample-pill" style="background:#eab308; color:#000;">Yellow</span></td>
+                  <td>Pigments absorb both red and green wavelengths. In light, stimulating both L (red) and M (green) cones produces pure yellow perception.</td>
+                </tr>
+                <tr>
+                  <td><strong>Red + Blue</strong></td>
+                  <td><span class="color-sample-pill" style="background:#6b21a8;">Deep Violet</span></td>
+                  <td><span class="color-sample-pill" style="background:#ec4899;">Magenta</span></td>
+                  <td>In optics, non-spectral magenta is synthesized by combining opposite ends of the visible spectrum.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           VIEW 3: HARMONIES & PALETTES
+           ===================================================================== -->
+      <section id="viewHarmonies" class="tab-view-section" role="tabpanel">
+        <div class="section-intro-card">
+          <h2 class="section-title">🌈 Dynamic Color Harmonies &amp; Tonal Ramps</h2>
+          <p class="section-desc">
+            Algorithmic color chords derived directly from your current central mixed color. Click any harmony swatch to copy its code or load it into an active mixer bucket.
+          </p>
+        </div>
+
+        <!-- Harmonies Grid -->
+        <div class="harmonies-container" id="harmoniesContainer">
+          <!-- Dynamically generated via app.js -->
+        </div>
+
+        <!-- 9-Step Monochromatic Tints & Shades Ramp -->
+        <div class="tonal-ramp-card">
+          <h3 class="ramp-title">🌓 9-Step Perceptual Luminance Ramp (Tints to Shades)</h3>
+          <p class="ramp-subtitle">Uniform lightness scaling from 10% to 90% in OKLCH polar space.</p>
+          <div class="ramp-swatches-strip" id="tonalRampStrip">
+            <!-- Dynamically generated -->
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           VIEW 4: HISTORICAL RECIPES & PIGMENT ARCHIVE
+           ===================================================================== -->
+      <section id="viewRecipes" class="tab-view-section" role="tabpanel">
+        <div class="section-intro-card">
+          <h2 class="section-title">📜 Legendary Historical Pigments &amp; Palette Recipes</h2>
+          <p class="section-desc">
+            Load centuries of artistic history with a single click. Discover the mineral chemistry and historical significance of classic pigments, and load their exact multi-color recipes into the 4 mixer buckets.
+          </p>
+        </div>
+
+        <div class="recipes-grid" id="recipesGrid">
+          <!-- Dynamically populated from curated dataset -->
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           VIEW 5: CHROMA MATCH CHALLENGE / QUIZ
+           ===================================================================== -->
+      <section id="viewQuiz" class="tab-view-section" role="tabpanel">
+        <div class="section-intro-card">
+          <h2 class="section-title">🎯 Chroma Match Lab: Master the Colorist Challenge</h2>
+          <p class="section-desc">
+            Test your color perception! A mystery target color is presented in the split target orb. Tune the 4 buckets and percentage ratios to replicate the target within 95%+ accuracy.
+          </p>
+        </div>
+
+        <!-- Quiz Container -->
+        <div class="quiz-container-box">
+          <!-- Tier selector -->
+          <div class="quiz-tier-bar">
+            <span class="quiz-tier-label">Difficulty Tier:</span>
+            <button type="button" class="btn btn-outline btn-sm quiz-tier-btn active" data-tier="beginner">Level 1: Primary Blends (2 Colors)</button>
+            <button type="button" class="btn btn-outline btn-sm quiz-tier-btn" data-tier="intermediate">Level 2: Nuanced Tints (3 Colors)</button>
+            <button type="button" class="btn btn-outline btn-sm quiz-tier-btn" data-tier="master">Level 3: Master Colorist (4 Colors)</button>
+          </div>
+
+          <!-- Split Screen Target Orb Arena -->
+          <div class="quiz-match-arena">
+            <div class="split-orb-wrapper" aria-label="Split color comparison orb">
+              <!-- Left: Target -->
+              <div class="split-half split-target" id="quizTargetOrb" style="background-color: #ec4899;"></div>
+              <!-- Right: User's Mix -->
+              <div class="split-half split-current" id="quizCurrentOrb" style="background-color: #8b5cf6;"></div>
+              <div class="split-center-divider"></div>
+            </div>
+
+            <!-- Target & User Live Mix Badges Deck (Outside Orb - Uncropped) -->
+            <div class="split-labels-deck">
+              <div class="split-info-card target-card">
+                <span class="split-card-badge">🎯 Target Goal</span>
+                <span class="split-target-name" id="quizTargetName">Persian Rose</span>
+              </div>
+              <div class="split-info-card current-card">
+                <span class="split-card-badge">🧪 Your Live Mix</span>
+                <span class="split-current-name" id="quizCurrentName">Royal Amethyst</span>
+              </div>
+            </div>
+
+            <!-- Real-time Accuracy Gauge -->
+            <div class="match-score-gauge">
+              <div class="score-line">
+                <span class="score-label">Perceptual Match Accuracy (CIELAB ΔE):</span>
+                <strong class="score-pct-val" id="quizMatchPct">74% Match</strong>
+              </div>
+              <div class="score-meter-track">
+                <div class="score-meter-fill" id="quizMeterFill" style="width: 74%;"></div>
+              </div>
+              <div class="score-eval-message" id="quizEvalMessage">Adjust bucket colors and sliders to match the left target!</div>
+            </div>
+
+            <!-- Quiz Tuning Console (Direct In-Quiz Mixing Inputs!) -->
+            <div class="quiz-tuning-console">
+              <div class="quiz-console-header">
+                <div class="quiz-console-title-wrap">
+                  <span class="quiz-console-title">🎛️ Tune Challenge Mixing Stations</span>
+                  <span class="quiz-console-subtitle">Tap circular colors or drag sliders to blend your live mix</span>
+                </div>
+                <div class="quiz-hint-chip" id="quizHintBadge">
+                  <span class="hint-text" id="quizHintText">💡 Hint: Yellow + Red</span>
+                </div>
+              </div>
+
+              <!-- In-Quiz Stations Row -->
+              <div class="quiz-stations-row" id="quizStationsRow">
+                <!-- Dynamically populated based on active tier (2, 3, or 4 stations) -->
+              </div>
+            </div>
+
+            <!-- Quiz Action Buttons -->
+            <div class="quiz-action-bar">
+              <button type="button" class="btn btn-primary btn-md" id="btnSubmitMatch">
+                ✨ Check Accuracy &amp; Submit
+              </button>
+              <button type="button" class="btn btn-secondary btn-md" id="btnNextChallenge">
+                Next Target ➔
+              </button>
+            </div>
+
+            <!-- Scorecard -->
+            <div class="quiz-stats-ribbon">
+              <span>Rounds Won: <strong id="quizRoundsWon">0</strong></span>
+              <span>Total Points: <strong id="quizTotalPoints">0</strong></span>
+              <span>Streak: <strong id="quizStreak">0 🔥</strong></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       4. GLOBAL FOOTER
+       ========================================================================= -->
+  <footer class="app-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="https://mahesh-yennam.github.io/Gamility/" class="footer-logo">
+          <span>🎮</span> Gami<strong>lity</strong>
+        </a>
+        <p class="footer-copy">
+          The Chroma Lab &mdash; An interactive chromatic discovery tool. Free, educational, and 100% client-side.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="https://mahesh-yennam.github.io/Gamility/explorer.html">Explorer Hub</a>
+        <a href="https://mahesh-yennam.github.io/Gamility/explorer/nutrition-health/index.html">Nutrition &amp; Health</a>
+        <a href="https://mahesh-yennam.github.io/Deep-Ocean-Odyssey/">Deep Ocean Odyssey</a>
+        <a href="https://mahesh-yennam.github.io/Solar-System/">Solar System</a>
+        <a href="https://mahesh-yennam.github.io/Gamility/privacy.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Script -->
+  <script src="app.js"></script>
+</body>
+</html>

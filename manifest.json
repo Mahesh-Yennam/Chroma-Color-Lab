@@ -1,0 +1,17 @@
+{
+  "name": "The Chroma Lab: Color Mixing & Spectral Synthesis",
+  "short_name": "ChromaLab",
+  "description": "Interactive color mixing, pigment chemistry, and spectral synthesis lab. Features central chroma orb, 4-bucket dock, subtractive & additive physics, multi-format code export, and quiz challenge.",
+  "start_url": "https://mahesh-yennam.github.io/Chroma-Color-Lab/",
+  "scope": "https://mahesh-yennam.github.io/Chroma-Color-Lab/",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#090d16",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
